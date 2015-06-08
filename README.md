@@ -7,7 +7,7 @@ Assignment objectives
 
 This assignment can be solved in any environment where a C compiler is available.
 
-MIEI-02 file system1
+#MIEI-02 file system1
 
 This programming assignment concerns the development of a file system similar to Windows FAT; 
 of course, many simplifications are made. Students will receive a set of files with code; one of 
@@ -17,7 +17,7 @@ As expected the file system is stored in a disk; a Linux (or Windows or Mac OS X
 the disk. Reading and writing blocks corresponds to reading and writing fixed size chunks of data 
 from / to the file; all reads and writes start at an offset multiple of the block size.
 
-Disk emulation
+#Disk emulation
 The disk is emulated by a file; one can only read or write 4K bytes that start in a offset that
 is a multiple of 4096. File disk.h defines the API for using the virtual disk:
 
@@ -28,7 +28,7 @@ void disk_read( int blocknum, char *data );
 void disk_write( int blocknum, const char *data ); 
 void disk_close();
 
-File system operations
+#File system operations
 
 File fs.h describes the operations that manipulate the file system:
 int fs_format();
